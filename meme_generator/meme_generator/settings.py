@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'memes.apps.MemesConfig',
+    'users.apps.UsersConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -51,6 +52,9 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'meme_generator.urls'
+
+LOGIN_REDIRECT_URL = 'memes-home'
+LOGIN_URL = 'login'
 
 TEMPLATES = [
     {

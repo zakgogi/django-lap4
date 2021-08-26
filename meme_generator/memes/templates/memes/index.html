@@ -1,9 +1,10 @@
 {% extends "memes/base.html" %} {% block content %} {% if memes %}
 <ul>
   {% for meme in memes %}
-  <li><a href={% url 'show-meme' id=meme.id%}>{{ meme.name }}</a></li>
+  <li><a href={% url 'show-meme' id=meme.id%}>{{ meme.title }}</a></li>
   {% endfor %}
 </ul>
+<a href={% url 'create-meme' %}><button>Add Meme</button></a>
 {% else %}
 <p>No memes are available.</p>
 {% endif %} {% endblock content %}

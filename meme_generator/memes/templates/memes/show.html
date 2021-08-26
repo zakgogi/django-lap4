@@ -1,0 +1,4 @@
+{% extends 'memes/base.html' %} {% block content %}
+<p>Title: {{meme.title}}, caption: {{meme.caption}}.</p>
+<img src="{{meme.image_url}}" />
+{% endblock content %}
