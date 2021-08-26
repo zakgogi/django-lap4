@@ -1,3 +1,54 @@
-li {
-  color: red;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh; 
+  border: solid 1px green;
+}
+nav {
+  width: 100%;
+  position: relative;
+  /* border: solid 1px blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px;
+  background: grey;
+}
+nav a:hover {
+  color: black;
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 30px;
+  color: white;
+}
+
+nav span {
+  margin-right: 30px;
+}
+
+nav button {
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1rem;
+}
+.signup-form {
+  margin: 0 auto;
+  border: red solid 1px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+}
+.signup-form span {
+  display: none;
 }

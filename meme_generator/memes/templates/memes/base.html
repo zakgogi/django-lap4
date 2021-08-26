@@ -11,13 +11,17 @@
   </head>
   <body>
     <nav>
-      <a href="{% url 'memes-home' %}">Memes</a>
-      <a href="{% url 'memes-about' %}">About our Memes</a>
+      <div class="left-nav">
+        <a href="{% url 'memes-home' %}">Memes</a>
+        <a href="{% url 'memes-about' %}">About</a>
+      </div>
       {% if user.is_authenticated %}
-      <span>Hi {{user.username}}!</span>
-      <a href={% url 'logout' %}><button>Logout</button></a>
-        {% else %}
-      <a href={% url 'login' %}><button>Login</button></a>
+      <div class="right-nav">
+        <span>Hi {{user.username}}!</span>
+        <a href={% url 'logout' %}><button>Logout</button></a>
+          {% else %}
+        <a href={% url 'login' %}><button>Login</button></a>
+      </div>
         {% endif %}
     </nav>
 

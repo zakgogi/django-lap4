@@ -1,5 +1,5 @@
 {% extends 'memes/base.html' %} {% block content %}
-<form method="POST">
+<form class="signup-form" method="POST">
   {% csrf_token %} {{form}}
   <input type="submit" value="Signup" />
 </form>
